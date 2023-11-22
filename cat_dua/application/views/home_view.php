@@ -17,6 +17,26 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
   <title>Try Out BMC</title>
+
+  <style>
+          #section1 .bg-tryout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('<?php echo base_url("tryout/bg-tryout.jpg"); ?>');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .btn-download {
+  background: #7367f0;
+  color: #fff !important;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 15px;
+}
+        </style>
+
 </head>
 <body>
 
@@ -45,7 +65,7 @@
                     <a class="nav-link" href="#">Demo</a>
                   </li>
                 <li class="nav-item link-buy">
-                    <a class="nav-link btn-border px-3" href="https://tryout.mitrasiswa.id/login">Sign In</a>
+                    <a class="nav-link btn-border px-3" style="color:#7367f0 !important;" href="https://tryout.mitrasiswa.id/login">Sign In</a>
                   </li>
 
                                             <!-- <li class="nav-item link-buy"> -->
@@ -76,7 +96,8 @@
             </div>
           </div>
         </div>
-        <div class="bg1"></div>
+        
+        <div class="bg-tryout"></div>
       </div>
 
       <div style="display:none" id="section2">
