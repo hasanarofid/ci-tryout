@@ -7,7 +7,7 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="icon" href="https://tryout.mitrasiswa.id/assets/img/faviconico.png" type="image/x-icon" />
+  <link rel="icon" type="image/x-icon" href="<?php echo base_url(); ?>/theme/assets/img/favicon/favicon.ico" />
   <link rel="stylesheet" href="https://tryout.mitrasiswa.id/assets/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="https://tryout.mitrasiswa.id/assets/compro/font/flaticon.css">
