@@ -67,7 +67,7 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
+            <a href="<?php echo base_url('user'); ?>" class="app-brand-link">
               <span class="app-brand-logo demo">
                 <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -108,9 +108,9 @@
           <ul class="menu-inner py-1">
             <!-- Dashboards -->
             <li class="menu-item active">
-              <a href="app-email.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-mail"></i>
-                <div data-i18n="Email">Beranda</div>
+              <a href="<?php echo base_url('user'); ?>" class="menu-link">
+                <i class="menu-icon tf-icons fa fa-home"></i>
+                <div data-i18n="Beranda">Beranda</div>
               </a>
             </li>
        
@@ -126,35 +126,45 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="app-invoice-list.html" class="menu-link">
-                    <div data-i18n="List">List</div>
+                  <a href="<?php echo base_url('tryout/polri'); ?>" class="menu-link">
+                    <div data-i18n="Polri">Polri</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="app-invoice-preview.html" class="menu-link">
-                    <div data-i18n="Preview">Preview</div>
+                  <a href="<?php echo base_url('tryout/tni'); ?>" class="menu-link">
+                    <div data-i18n="TNI">TNI</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="app-invoice-edit.html" class="menu-link">
-                    <div data-i18n="Edit">Edit</div>
+                  <a href="<?php echo base_url('tryout/kedinasan'); ?>" class="menu-link">
+                    <div data-i18n="Kedinasan">Kedinasan</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="app-invoice-add.html" class="menu-link">
-                    <div data-i18n="Add">Add</div>
+                  <a href="<?php echo base_url('tryout/casn'); ?>" class="menu-link">
+                    <div data-i18n="Casn">Casn</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="<?php echo base_url('tryout/utbk'); ?>" class="menu-link">
+                    <div data-i18n="UTBK">UTBK</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="<?php echo base_url('tryout/bumn'); ?>" class="menu-link">
+                    <div data-i18n="BUMN">BUMN</div>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="menu-item">
-              <a href="app-email.html" class="menu-link">
+              <a href="<?php echo base_url('tryout/pembahasan'); ?>" class="menu-link">
                 <i class="menu-icon tf-icons fa fa-desktop"></i>
                 <div data-i18n="Pembahasan Tryout">Pembahasan Tryout</div>
               </a>
             </li>
             <li class="menu-item">
-              <a href="app-chat.html" class="menu-link">
+              <a href="<?php echo base_url('tryout/program'); ?>" class="menu-link">
                 <i class="menu-icon tf-icons fa fa-book "></i>
                 <div data-i18n="Program Tryout">Program Tryout</div>
               </a>
