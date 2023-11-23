@@ -12,44 +12,7 @@ $config['editor_style']		= "replace";	//pilihannya "inline" atau "replace";
 $config['nama_aplikasi']	= "CAT - Computer Assisted Test";
 $config['versi']			= "2.0";
 $config['tgl']				= "27012017";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$config['base_url']			= $root;
-
-
+$config['base_url']			= $root;    
 $config['index_page'] 		= '';
 $config['uri_protocol']		= 'AUTO';
 $config['url_suffix'] = '';

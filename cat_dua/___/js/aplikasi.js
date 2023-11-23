@@ -149,6 +149,26 @@ function login(e) {
 	});
 	return false;
 }
+
+function loginUser(e){
+	e = e || window.event;
+	var data 	= $('#u_login').serialize();
+	$("#konfirmasi").html("<div class='alert alert-info'><i class='icon icon-spinner icon-spin'></i> Checking...</div>")
+	$.ajax({
+		type: "POST",
+		data: data,
+		url: base_url+"user/act_login",
+		success: function(r) {
+			if (r.log.status == 0) {
+				$("#konfirmasi").html("<div class='alert alert-danger'>"+r.log.keterangan+"</div>");
+			} else {
+				$("#konfirmasi").html("<div class='alert alert-success'>"+r.log.keterangan+"</div>");
+				window.location.assign(base_url+"user"); 
+			}
+		}
+	});
+	return false;
+}
 /* 
 =======================================
 =======================================

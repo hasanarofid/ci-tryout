@@ -65,7 +65,7 @@
                     <a class="nav-link" href="#">Demo</a>
                   </li>
                 <li class="nav-item link-buy">
-                    <a class="nav-link btn-border px-3" style="color:#7367f0 !important;" href="https://tryout.mitrasiswa.id/login">Sign In</a>
+                    <a class="nav-link btn-border px-3" style="color:#7367f0 !important;" href="<?php echo base_url('user/index'); ?>">Sign In</a>
                   </li>
 
                                             <!-- <li class="nav-item link-buy"> -->
