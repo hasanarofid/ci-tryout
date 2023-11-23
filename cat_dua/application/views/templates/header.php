@@ -121,7 +121,7 @@
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons fa fa-file"></i>
-                <div data-i18n="Invoice">Pilih Tryout</div>
+                <div data-i18n="Pilih Tryout">Pilih Tryout</div>
                 <div class="badge bg-label-danger rounded-pill ms-auto">6</div>
               </a>
               <ul class="menu-sub">
