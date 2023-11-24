@@ -25,5 +25,13 @@ class Jenis_tryout_model extends CI_Model {
         return $query->result();
     }
     
+    public function get_jenis_tryout_slug($slug) {
+        // Get jenis tryout data from the database where pilihan_tryout_id is equal to $pilihan_tryout_id
+        $this->db->where('slug', $slug);
+        $query = $this->db->get('jenis_tryout_m');
+        
+        // Use row() instead of result() to get a single row
+        return $query->row();
+    }
 }
 ?>
