@@ -47,36 +47,6 @@ INSERT INTO `jenis_tryout_m` VALUES (1,'Test Psikologi','psikologi','Test Psikol
 UNLOCK TABLES;
 
 --
--- Table structure for table `kategori_m`
---
-
-DROP TABLE IF EXISTS `kategori_m`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `kategori_m` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `kategori` varchar(255) NOT NULL,
-  `slug` varchar(255) DEFAULT NULL,
-  `deskripsi` text,
-  `gambar` varchar(255) DEFAULT NULL,
-  `jenis_tryout_id` int DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `kategori_m`
---
-
-LOCK TABLES `kategori_m` WRITE;
-/*!40000 ALTER TABLE `kategori_m` DISABLE KEYS */;
-INSERT INTO `kategori_m` VALUES (1,'Test Kecerdasan','kecerdasan','Berisi paket tryout tes kecerdasan meliputi kemampuan verbal, numerikal, logikal, figural, dan lain - lain',NULL,1,'2023-11-24 06:28:35','2023-11-24 06:28:35');
-/*!40000 ALTER TABLE `kategori_m` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `m_admin`
 --
 
@@ -309,35 +279,6 @@ INSERT INTO `pilihan_tryout_m` VALUES (1,'Polri','Tryout Polri','2023-11-23 07:1
 UNLOCK TABLES;
 
 --
--- Table structure for table `soal_m`
---
-
-DROP TABLE IF EXISTS `soal_m`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `soal_m` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `judul` varchar(100) NOT NULL,
-  `sub_judul` varchar(100) NOT NULL,
-  `kategori_id` int DEFAULT NULL,
-  `paket` varchar(20) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `soal_m`
---
-
-LOCK TABLES `soal_m` WRITE;
-/*!40000 ALTER TABLE `soal_m` DISABLE KEYS */;
-INSERT INTO `soal_m` VALUES (1,'Kecerdasan Bintar','Test Kecerdasan Paket 1',1,'Free','2023-11-24 07:06:22','2023-11-24 07:07:14'),(2,'Kecerdasan Bintar','Test Kecerdasan Paket 2',1,'Premium','2023-11-24 07:06:22','2023-11-24 07:26:49'),(3,'Kecerdasan Bintar','Test Kecerdasan Paket 3',1,'VIP','2023-11-24 07:06:22','2023-11-24 07:06:22'),(4,'Kecerdasan Tamtama','Test Kecerdasan Paket 1',1,'VIP','2023-11-24 07:06:22','2023-11-24 07:26:49'),(5,'Kecerdasan Tamtama','Test Kecerdasan Paket 2',1,'Free','2023-11-24 07:06:22','2023-11-24 07:06:22');
-/*!40000 ALTER TABLE `soal_m` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `tr_guru_mapel`
 --
 
@@ -441,4 +382,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-24 15:35:18
+-- Dump completed on 2023-11-23 15:04:42
